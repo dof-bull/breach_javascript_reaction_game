@@ -5,6 +5,7 @@ var both = 0;
 var counter = 0;
 var currentBlocks = [];
 
+//---------- Movement Functions ----------
 function moveLeft() {
   var left = parseInt(
     window.getComputedStyle(character).getPropertyValue("left")
@@ -13,6 +14,7 @@ function moveLeft() {
     character.style.left = left - 2 + "px";
   }
 }
+
 function moveRight() {
   var left = parseInt(
     window.getComputedStyle(character).getPropertyValue("left")
@@ -33,11 +35,13 @@ document.addEventListener("keydown", (event) => {
     }
   }
 });
+
 document.addEventListener("keyup", (event) => {
   clearInterval(interval);
   both = 0;
 });
 
+//---------- Fall Game Function----------
 var blocks = setInterval(function () {
   var blockLast = document.getElementById("block" + (counter - 1));
   var holeLast = document.getElementById("hole" + (counter - 1));
@@ -50,6 +54,7 @@ var blocks = setInterval(function () {
     );
   }
 
+  //---------- Hole Creator ----------
   if (blockLastTop < 400 || counter == 0) {
     var block = document.createElement("div");
     var hole = document.createElement("div");
@@ -73,6 +78,8 @@ var blocks = setInterval(function () {
     window.getComputedStyle(character).getPropertyValue("left")
   );
   var drop = 0;
+
+  //---------- Game Over Config ----------
   if (characterTop <= 0) {
     alert("Game over. Score: " + (counter - 9));
     clearInterval(blocks);

@@ -1,8 +1,10 @@
+/*-------------Overall-------------*/
 * {
   padding: 0;
   margin: 0;
 }
 
+/*-------------Game Container-------------*/
 #game {
   width: 400px;
   height: 500px;
@@ -10,6 +12,7 @@
   margin: auto;
 }
 
+/*-------------Character Unit-------------*/
 #character {
   width: 20px;
   height: 20px;
@@ -21,6 +24,7 @@
   z-index: 99999;
 }
 
+/*-------------Blocks-------------*/
 .block {
     width: 400px;
     height: 20px;
@@ -30,6 +34,7 @@
     margin-top: -20px;
 }
 
+/*-------------Holes-------------*/
 .hole{
     width: 40px;
     height: 20px;
