@@ -4,22 +4,42 @@
 <head>
 	<!--Meta Data-->
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Breach: Reaction Game.">
+	<meta name="keywords" content="Browser game, fall game, reaction game, reaction speed, breach">
+	<meta name="author" content="Donal O'Farrell">
+
+	<!--Tab Icon Link-->
+	<link rel="icon" href="assets/images/castle.png" type="image/png">
 
     <!--Style Sheet-->
 	<link rel="stylesheet" href="assets/css/style.css">
 
 	<!--Title-->
-	<title>Fall Game</title>
+	<title>Breach: Reaction Game</title>
 </head>
 
 <body>
+	<!--Page Title-->
+	<h1 class="page-title">Breach: Reaction Game</h1>
+
 	<!--Game Container-->
-	<div id="game">
+	<div class="game-container">
+		<!--Game Info Headers-->
+		<div class="game-info-container">
+				
+			<!--Score Counter-->
+			<div class="game-info">
+				Score <span id="score">0</span>
+			</div>
+		</div>
+		<!--Game Field-->
+        <div id="game">
 
-		<!--Character Unit-->
-		<div id="character"></div>
-	</div>
-
+            <!--Character Unit-->
+            <div id="character"></div>
+        </div>
+    </div>
 </body>
 <!--JS Script-->
 <script src="assets/js/script.js"></script>

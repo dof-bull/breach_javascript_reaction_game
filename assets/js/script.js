@@ -41,7 +41,7 @@ document.addEventListener("keyup", (event) => {
   both = 0;
 });
 
-//---------- Fall Game Function----------
+//---------- Breach: Reaction Game Function----------
 var blocks = setInterval(function () {
   var blockLast = document.getElementById("block" + (counter - 1));
   var holeLast = document.getElementById("hole" + (counter - 1));
