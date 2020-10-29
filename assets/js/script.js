@@ -79,7 +79,7 @@ var blocks = setInterval(function () {
     currentBlocks.push(counter);
     counter++;
     //---------- Score Display ----------
-    document.getElementById('score').innerHTML = "Score: " + (counter - 9);
+    document.getElementById('score').innerHTML = "Score: " + (counter - 5);
   }
   var characterTop = parseInt(
     window.getComputedStyle(character).getPropertyValue("top")
@@ -91,7 +91,7 @@ var blocks = setInterval(function () {
 
   //---------- Game Over Config ----------
   if (characterTop <= 0) {
-    alert("Game over. Score: " + (counter - 9));
+    alert("Game over. Score: " + (counter - 5));
     clearInterval(blocks);
     location.reload();
   }
