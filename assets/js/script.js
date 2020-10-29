@@ -30,7 +30,13 @@ document.addEventListener("keydown", (event) => {
     if (event.key === "ArrowLeft") {
       interval = setInterval(moveLeft, 1);
     }
+    if (event.key === "a") {
+      interval = setInterval(moveLeft, 1);
+    }
     if (event.key === "ArrowRight") {
+      interval = setInterval(moveRight, 1);
+    }
+    if (event.key === "d") {
       interval = setInterval(moveRight, 1);
     }
   }

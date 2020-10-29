@@ -5,11 +5,23 @@
 }
 
 /*-------------Game Container-------------*/
+
+.game-container {
+  width: 400px;
+  height: 600px;
+  border: 1px solid black;
+  margin: auto;
+}
+
 #game {
   width: 400px;
   height: 500px;
   border: 1px solid black;
   margin: auto;
+}
+
+.footer-container {
+  position: relative;
 }
 
 /*-------------Character Unit-------------*/
@@ -26,20 +38,20 @@
 
 /*-------------Blocks-------------*/
 .block {
-    width: 400px;
-    height: 20px;
-    background-color: black;
-    position: relative;
-    top: 100px;
-    margin-top: -20px;
+  width: 400px;
+  height: 20px;
+  background-color: black;
+  position: relative;
+  top: 100px;
+  margin-top: -20px;
 }
 
 /*-------------Holes-------------*/
-.hole{
-    width: 40px;
-    height: 20px;
-    background-color: white;
-    position: relative;
-    top: 100px;
-    margin-top: -20px;
+.hole {
+  width: 40px;
+  height: 20px;
+  background-color: white;
+  position: relative;
+  top: 100px;
+  margin-top: -20px;
 }
