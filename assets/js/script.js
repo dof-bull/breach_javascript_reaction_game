@@ -4,6 +4,7 @@ var interval;
 var both = 0;
 var counter = 0;
 var currentBlocks = [];
+document.getElementById('score').innerHTML = "Score: " + counter;
 
 //---------- Movement Functions ----------
 function moveLeft() {
@@ -76,6 +77,8 @@ var blocks = setInterval(function () {
     game.appendChild(hole);
     currentBlocks.push(counter);
     counter++;
+    //---------- Score Display ----------
+    document.getElementById('score').innerHTML = "Score: " + (counter - 9);
   }
   var characterTop = parseInt(
     window.getComputedStyle(character).getPropertyValue("top")
