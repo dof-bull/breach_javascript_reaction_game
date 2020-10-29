@@ -25,6 +25,7 @@ function moveRight() {
   }
 }
 
+//---------- Keybindings ----------
 document.addEventListener("keydown", (event) => {
   if (both == 0) {
     both++;

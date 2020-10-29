@@ -6,11 +6,24 @@
 
 /*-------------Game Container-------------*/
 
+/*-------------Title-------------*/
+
+.page-title h3 {
+ 
+}
+
+/*-------------Score-------------*/
+
+.score-box {
+  
+}
+
 .game-container {
   width: 400px;
   height: 600px;
   border: 1px solid black;
   margin: auto;
+  text-align: center;
 }
 
 #game {
@@ -18,29 +31,27 @@
   height: 500px;
   border: 1px solid black;
   margin: auto;
-}
-
-.footer-container {
-  position: relative;
+  background-color: rgb(160, 160, 160);
+  z-index: -1;
 }
 
 /*-------------Character Unit-------------*/
 #character {
   width: 20px;
   height: 20px;
-  background-color: green;
+  background-color: red;
   border-radius: 50%;
   position: relative;
   top: 440px;
   left: 190px;
-  z-index: 99999;
+  z-index: 1;
 }
 
 /*-------------Blocks-------------*/
 .block {
   width: 400px;
   height: 20px;
-  background-color: black;
+  background-color: rgb(66, 65, 65);
   position: relative;
   top: 100px;
   margin-top: -20px;
@@ -50,7 +61,7 @@
 .hole {
   width: 40px;
   height: 20px;
-  background-color: white;
+  background-color: rgb(160, 160, 160);
   position: relative;
   top: 100px;
   margin-top: -20px;
